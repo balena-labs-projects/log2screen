@@ -1,0 +1,49 @@
+version: '2'
+volumes: 
+  dashboard-data:
+  speedtest-data:
+services:
+  dashboard:
+    image: balenablocks/dashboard
+    restart: always
+    volumes:
+      - "dashboard-data:/data"
+    depends_on: 
+      - "logging"
+    ports:
+      - "80"
+  influxdb:
+    image: influxdb@sha256:73f876e0c3bd02900f829d4884f53fdfffd7098dd572406ba549eed955bf821f
+    container_name: influxdb
+    restart: always
+    depends_on: 
+      - "logging"
+    environment:
+      - INFLUXDB_DB=balena
+      - INFLUXDB_USER=balena
+      - INFLUXDB_ADMIN_ENABLED=true
+      - INFLUXDB_ADMIN_USER=admin
+      - INFLUXDB_ADMIN_PASSWORD=admin
+      - INFLUXDB_DATA_DIR=/data
+    volumes:
+      - 'speedtest-data:/data'
+  connector:
+    image: balenablocks/connector:latest
+    restart: always
+    depends_on: 
+      - "logging"
+    labels:
+      io.balena.features.balena-api: '1' # necessary to discover services
+    privileged: true # necessary to change container hostname
+    environment: 
+      - ENABLE_DEVICE_METRICS=1
+  logging:
+    build: ./logging
+    privileged: true
+    restart: always
+    network_mode: host
+    environment:
+      - 'DBUS_SYSTEM_BUS_ADDRESS=unix:path=/host/run/dbus/system_bus_socket'
+    labels:
+      io.balena.features.dbus: 1
+      io.balena.features.supervisor-api: 1

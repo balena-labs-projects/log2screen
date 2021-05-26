@@ -1,0 +1,5 @@
+FROM balenalib/%%BALENA_MACHINE_NAME%%-alpine:run
+WORKDIR /app
+COPY . .
+
+CMD ["/bin/bash", "run.sh"]

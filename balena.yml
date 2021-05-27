@@ -1,0 +1,24 @@
+name: log2screen
+description: >-
+  Removes the balena logo and prints logging and device/app information to any attached HDMI display
+type: sw.application
+assets:
+  repository:
+    type: blob.asset
+    data:
+      url: 'https://github.com/balenablocks/log2screen'
+  logo:
+    type: blob.asset
+    data:
+      url: 'https://raw.githubusercontent.com/balenablocks/log2screen/master/logo.png'
+data:
+  defaultDeviceType: raspberrypi4-64
+  supportedDeviceTypes:
+    - raspberrypi3
+    - raspberrypi3-64
+    - raspberrypi4-64
+    # - fincm3 = plymouth won't quit, see issue #1
+    - raspberrypi400-64
+    - intel-nuc
+    - genericx86-64-ext
+    - jetson-nano

@@ -2,4 +2,6 @@ FROM balenalib/%%BALENA_MACHINE_NAME%%-alpine:run
 WORKDIR /app
 COPY . .
 
+RUN install_packages jq
+
 CMD ["/bin/bash", "run.sh"]

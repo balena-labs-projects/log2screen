@@ -1,4 +1,4 @@
-FROM balenalib/%%BALENA_MACHINE_NAME%%-alpine:run
+FROM balenalib/%%BALENA_MACHINE_NAME%%-alpine:latest-run
 WORKDIR /app
 COPY . .
 

@@ -18,7 +18,7 @@ do
     echo -e "\033[0;36mPoint your browser at \033[0;32mhttp://$HOSTNAME \033[0;36mor \033[0;32mhttp://$IP \033[0;36mto get started! \033[0m" > /dev/tty0
 
     # print the status of the services in json pretty-print
-    echo "Services:" > dev/tty0
+    echo "Services:" > /dev/tty0
     curl -s "$BALENA_SUPERVISOR_ADDRESS/v2/applications/state?apikey=$BALENA_SUPERVISOR_API_KEY" | jq > /dev/tty0
     
     # Log the journal to the TTY for 20 seconds

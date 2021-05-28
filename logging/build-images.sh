@@ -24,14 +24,14 @@ function build_and_push_image () {
 function create_and_push_manifest() {
   local DOCKER_REPO=$1
   docker manifest rm $DOCKER_REPO/$BLOCK_NAME:latest || true
-  docker manifest create $DOCKER_REPO/$BLOCK_NAME:latest --amend $DOCKER_REPO/$BLOCK_NAME:raspberrypi --amend $DOCKER_REPO/$BLOCK_NAME:raspberrypi3 --amend $DOCKER_REPO/$BLOCK_NAME:raspberrypi4-64 --amend $DOCKER_REPO/$BLOCK_NAME:genericx86-64-ext
+  docker manifest create $DOCKER_REPO/$BLOCK_NAME:latest --amend $DOCKER_REPO/$BLOCK_NAME:raspberry-pi --amend $DOCKER_REPO/$BLOCK_NAME:raspberrypi3 --amend $DOCKER_REPO/$BLOCK_NAME:raspberrypi4-64 --amend $DOCKER_REPO/$BLOCK_NAME:genericx86-64-ext
   docker manifest push $DOCKER_REPO/$BLOCK_NAME:latest
 }
 
 # YOu can pass in a repo (such as a test docker repo) or accept the default
 DOCKER_REPO=${1:-balenablocks}
 
-build_and_push_image $DOCKER_REPO "raspberrypi" "linux/arm/v6" "rpi"
+build_and_push_image $DOCKER_REPO "raspberry-pi" "linux/arm/v6" "rpi"
 build_and_push_image $DOCKER_REPO "raspberrypi4-64" "linux/arm64" "aarch64"
 build_and_push_image $DOCKER_REPO "raspberrypi3" "linux/arm/v7" "armv7hf"
 

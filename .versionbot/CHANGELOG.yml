@@ -1,0 +1,94 @@
+- commits:
+    - subject: moving from balenablocks to balena-labs-projects
+      hash: 6f6ba88e956675d55e25d3ada2d138c651eca957
+      body: ""
+      footer:
+        Signed-off-by: Flynn Joffray <flynn@balena.io>
+        signed-off-by: Flynn Joffray <flynn@balena.io>
+        Change-type: patch
+        change-type: patch
+      author: Flynn Joffray
+      nested: []
+    - subject: Fix PiZero build
+      hash: 7416ddde3d46be9ca9a561727fe1c6fcc6510fb7
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Phil Wilson <phil@balena.io>
+        signed-off-by: Phil Wilson <phil@balena.io>
+      author: Phil Wilson
+      nested: []
+    - subject: build acript for zero
+      hash: d034a57aa4ee3611749ed275504cc6edadf19671
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Phil Wilson <phil@balena.io>
+        signed-off-by: Phil Wilson <phil@balena.io>
+      author: Phil Wilson
+      nested: []
+    - subject: Add missing /
+      hash: 46dd5dec28fff0ba8d0636903b47d1bb32e0899b
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Tomás Migone <tomas@balena.io>
+        signed-off-by: Tomás Migone <tomas@balena.io>
+      author: Tomás Migone
+      nested: []
+    - subject: Add more supported DTs
+      hash: 50cc899b77b25c126078ed85e443316d09e3c437
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Phil Wilson <phil@balena.io>
+        signed-off-by: Phil Wilson <phil@balena.io>
+      author: Phil Wilson
+      nested: []
+    - subject: hub-ify
+      hash: 7217e4f51d368b52afadbfaa0046dd90bb1831c2
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Phil Wilson <phil@balena.io>
+        signed-off-by: Phil Wilson <phil@balena.io>
+      author: Phil Wilson
+      nested: []
+    - subject: Add logging info
+      hash: d8877f2e04a7aca7d43993389de553705dd22a28
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Phil Wilson <phil@balena.io>
+        signed-off-by: Phil Wilson <phil@balena.io>
+      author: Phil Wilson
+      nested: []
+    - subject: added build script
+      hash: 744f1045a0ec501df9f4742c99c33d7eecb59aaa
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Phil Wilson <phil@balena.io>
+        signed-off-by: Phil Wilson <phil@balena.io>
+      author: Phil Wilson
+      nested: []
+    - subject: first commit
+      hash: 501af4f94b77366c5bb2eccf319bcf9547019e17
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Phil Wilson <phil@balena.io>
+        signed-off-by: Phil Wilson <phil@balena.io>
+      author: Phil Wilson
+      nested: []
+  version: 0.0.2
+  title: ""
+  date: 2022-11-16T04:42:06.181Z

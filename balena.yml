@@ -1,6 +1,7 @@
 name: log2screen
 description: >-
-  Removes the balena logo and prints logging and device/app information to any attached HDMI display
+  Removes the balena logo and prints logging and device/app
+  information to any attached HDMI display
 type: sw.application
 assets:
   repository:
@@ -24,3 +25,4 @@ data:
     - intel-nuc
     - genericx86-64-ext
     - jetson-nano
+version: 0.0.2

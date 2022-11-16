@@ -6,11 +6,11 @@ assets:
   repository:
     type: blob.asset
     data:
-      url: 'https://github.com/balenablocks/log2screen'
+      url: 'https://github.com/balena-labs-projects/log2screen'
   logo:
     type: blob.asset
     data:
-      url: 'https://raw.githubusercontent.com/balenablocks/log2screen/master/logo.png'
+      url: 'https://raw.githubusercontent.com/balena-labs-projects/log2screen/master/logo.png'
 data:
   defaultDeviceType: raspberrypi4-64
   supportedDeviceTypes:
